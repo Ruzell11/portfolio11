@@ -37,9 +37,16 @@
                       </div>
                   </div>
     
-                      <div >
+                      <div class="pt-3">
                       <button type="button" class="btn btn-dark " style="width:110px ;">Resume</button>
                       <button type="button" class="btn btn-dark" style="width:110px ;">Contact</button>
+                      <br>
+                      <div class="icon">
+                      <i class="fa fa-github" aria-hidden="true"></i>
+                      <i class="fa fa-facebook" aria-hidden="true"></i>
+                      <i class="fa fa-instagram" aria-hidden="true"></i>
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </div>
                     </div>
                   </div>
                   <div class="col container-fluid ">
@@ -74,35 +81,12 @@
         <h1 style="color:#04d9ff;" class="py-5" >Technologies</h1>
       </section>
       <section class="content ">
-        <div class="container  ">
-          <div class="row ">
-            <div class=" col-sm-6 col-md-4 col-lg-3 mx-auto content ">
-            <div class="skills  ">
           <img src="./html.png" alt="html" class="technology">
-            </div>
-         </div>
-         <div class=" col-sm-6 col-md-4 col-lg-3 ">
-          <div class="skills">
             <img src="./css.jpg" alt="css" class="technology">
-          </div>
-       </div>
-       <div class=" col-sm-6 col-md-4 col-lg-3 ">
-        <div class="skills">
           <img src="./bootstrap.png" alt="bootstrap" class="technology">
-        </div>
-     </div>
-     <div class=" col-sm-6 col-md-4 col-lg-3 ">
-      <div class="skills">
-        <img src="./javascript.png.crdownload" alt="html" class="technology">
-      </div>
-   </div>
-   <div class=" col-sm-6 col-md-4 col-lg-3 ">
-    <div class="skills">
+        <img src="./JavaScript_Logo.png" alt="html" class="technology">
       <img src="./react1.jpg" alt="html" class="technology">
-    </div>
- </div>
-          </div>
-          </div>
+   
        
       
     </section>
@@ -134,84 +118,28 @@
           </div>
         </div>
     
-        <section class=" my- text-center shadow p-3 mb-5 bg-body rounded"  style="background-color: #00203FFF !important; color:#04d9ff ;">
+        <section class="text-center shadow p-3 mb-5 bg-body rounded"  style="background-color: #00203FFF !important; color:#04d9ff ;" id="contact-form">
+          <div>
           <h1>Contact Me</h1>
-          </section>
-    
-    
-          
-          <div class="contact-wrapper">
-          
-            
-            <form id="contact-form" class="form-horizontal" role="form">
-               
-              <div class="form-group">
-                <div class="col-sm-12">
-                  <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
-                </div>
-              </div>
-        
-              <div class="form-group">
-                <div class="col-sm-12">
-                  <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-                </div>
-              </div>
-        
-              <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-              
-              <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                <div class="alt-send-button">
-                  <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-                </div>
-              
-              </button>
-              
-            </form>
-            
-            
-              <div class="direct-contact-container" >
-        
-                <ul class="contact-list" >
-                  <li class="list-item" ><i class="fa fa-map-marker fa-2x"><span class="contact-text place " style="color:#00203FFF ;">City , Muntinlupa</span></i></li>
-                  
-                  <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone" > <a href="tel:1-212-555-5555" title="Give me a call" style="color:#00203FFF ;">09275079629</a></span></i></li>
-                  
-                  <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail" ><a href="mailto:#" title="Send me an email" style="color:#00203FFF ;">johnruzell123@gmail.com</a></span></i></li>
-                  
-                </ul>
-        
-                <hr>
-                <ul class="social-media-list">
-                  <a href="https://github.com/Ruzell11"  class="contact-icon"> <li>
-                    <i class="fa fa-github" aria-hidden="true" ></i></li></a>
-                  
-                    <a href="#"  class="contact-icon"> <li>
-                      <i class="fa fa-github" aria-hidden="true" ></i></li></a>
-                    
-                      <a href="#"  class="contact-icon"> <li>
-                        <i class="fa fa-github" aria-hidden="true" ></i></li></a>
-                      
-                        <a href="#"  class="contact-icon"> <li>
-                          <i class="fa fa-github" aria-hidden="true" ></i></li></a>
-                              
-                </ul>
-                <hr>
-        
-                <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-        
-              </div>
-            
           </div>
-          
-        </section>  
-          
-          
-    
+        </section>
+        <div className='app-container '>
+          <div className='form-container'>
+                 <form>
+                     <label>Email</label>
+                     <input type='email' placeholder='Enter your email'></input>
+                     <label>Name</label>
+                     <input type='name' placeholder='Enter your name'></input>
+                     <label>Message</label>
+                     <textarea name="" id="" cols="30" rows="10" class="my-2"></textarea>
+                          <button>Send Message</button>
+                          </section>
+                          </form>
+            </div>
+         </div>
+                   
         
         
-      </section>
-
- 
 </body>
 <script src="./index.js"></script>
 </html>
