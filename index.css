@@ -52,10 +52,10 @@ nav  li{
   display: none !important;
 }
 
-#icon{
-display: none;
- 
+.toggle-button{
+  visibility: hidden;
 }
+
 
 /* */
 .toggle-button .bar{
@@ -63,7 +63,9 @@ display: none;
   width: 100%;
   background-color: whitesmoke;
   border-radius: 8px;
+
 }
+
 #buttonside{
   position: relative !important;
   cursor: pointer;
@@ -209,6 +211,7 @@ form ,#contact-form{
 
 }
 
+
 .form-control, 
 textarea {
   background-color: #ADEFD1FF;
@@ -299,6 +302,13 @@ textarea {
 
 
 @media screen and (max-width:600px){
+  .side-na1:last-child{
+    display: flex !important;
+  }
+  .toggle-button{
+    visibility: visible !important;
+  }
+  
 
 .nav-side ,.toggleside{
   display: none !important;
@@ -332,28 +342,18 @@ textarea {
     .img-me{
         display: none;
     }
-       .navbar > ul {
-            display: flex;
-            flex-direction: column;  
-            margin: 0;
-            padding: 10px;
-        }
+      
         html, body {
           overflow-x: hidden;
           }
-          #icon{
-              display:block;
-            }
+          
 .toggle-button #icon{
   display: flex;
 }
 .navbar .items {
   display: none !important;
 }
-.navbar  {
-  flex-direction: column !important;
-  align-items: flex-start !important;
-}
+
 .navbar .items.active{
   display: flex !important;
 }
