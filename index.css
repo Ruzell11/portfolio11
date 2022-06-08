@@ -9,9 +9,7 @@ body{
   overflow-x: hidden;
 }
 nav{
-  display: flex ;
-  justify-content: space-between ;
-
+  display: flex !important;
 }
 
 .sidenav{
@@ -68,12 +66,16 @@ display: none;
 }
 #buttonside{
   position: relative !important;
+  cursor: pointer;
+}
+#buttonside:hover{
+  color: red !important;
 }
 .dropdown{
   display: flex !important;
   justify-content: flex-end;
   position: absolute !important;
-  top: 42px;
+  top: 55px;
   right: 0px;
   transition: .3s ease;
   
@@ -121,6 +123,9 @@ display: none;
 }
 .buttonside{
   display: block;
+}
+.side-na1{
+  display: flex;
 }
 
 .about{
@@ -295,7 +300,9 @@ textarea {
 
 @media screen and (max-width:600px){
 
-
+.nav-side ,.toggleside{
+  display: none !important;
+}
   form ,#contact-form{
     display:grid!important;
   }
@@ -359,6 +366,9 @@ textarea {
 }
 .navbar a{
 padding: .5rem 1rem;
+}
+.side-na1{
+  display: none !important;
 }
 
 }
