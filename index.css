@@ -8,6 +8,30 @@ body{
   background-color: #ADEFD1FF !important;
   overflow-x: hidden;
 }
+nav{
+  display: flex ;
+  justify-content: space-between ;
+
+}
+
+.sidenav{
+  display: flex !important;
+  color: #04d9ff;
+  justify-content: flex-end !important;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.info{
+  text-align: center;
+  display: none;
+  width: 100%;
+  color: #020035 !important;
+  justify-content: flex-end !important;
+  flex-direction: column;
+  position: absolute !important;
+}
 
 nav a{
     text-decoration: none;
@@ -24,18 +48,80 @@ nav  li{
     list-style:none ;
     padding: 10px;
     
+    
+}
+.navbar .items{
+  display: none !important;
 }
 
 #icon{
-  display: none;
+display: none;
+ 
 }
+
+/* */
 .toggle-button .bar{
   height: 3px;
   width: 100%;
   background-color: whitesmoke;
   border-radius: 8px;
 }
+#buttonside{
+  position: relative !important;
+}
+.dropdown{
+  display: flex !important;
+  justify-content: flex-end;
+  position: absolute !important;
+  top: 42px;
+  right: 0px;
+  transition: .3s ease;
+  
+ 
+}
+.nav-side{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color:#020035;
+  color: #04d9ff !important;
+}
 
+.icons{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons li{
+  padding: 10px;
+  
+}
+.icons li i {
+  font-size: 30px;
+}
+.side-nav{
+  width: 100%;
+}
+.side-nav li{
+  list-style: none;
+}
+.side-nav li a{
+  text-decoration: none;
+}
+
+.nav-side{
+  display: none;
+}
+
+.nav-side.active{
+  display: flex;
+}
+.buttonside{
+  display: block;
+}
 
 .about{
     font-size: 50px;
@@ -85,7 +171,9 @@ nav  li{
     font-size: 23px;
   
   }
-
+form ,#contact-form{
+  display: none !important;
+}
   .icon{
     cursor: pointer;
   }
@@ -124,6 +212,7 @@ textarea {
   letter-spacing: 1px;
 }
 
+
 .send-button {
   margin-top: 15px;
   height: 34px;
@@ -158,9 +247,7 @@ textarea {
   border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #020035; 
-}
+
 
 
 ::-webkit-scrollbar-thumb:hover {
@@ -207,6 +294,11 @@ textarea {
 
 
 @media screen and (max-width:600px){
+
+
+  form ,#contact-form{
+    display:grid!important;
+  }
   input,button{
     width: 100%;
   }
