@@ -16,7 +16,7 @@ sideButton.addEventListener('click' , () => {
    
 })
 
-header.forEach(function(event){
+header.forEach((event) => {
     event.addEventListener('click' , ()=>{
         sideNavLinks.classList.remove('active')
     })
