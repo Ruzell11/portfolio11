@@ -288,13 +288,13 @@ textarea {
    width: 50%;
  }
  
- button{
+ .send-message{
    padding: 10px;
    border-radius: 6px;
    background-color: var(--bg-button);
    color: var( --button-color);
    cursor: pointer;
-   width: 50%;
+   width: 100%;
  }
  
 
@@ -307,29 +307,48 @@ textarea {
   width: 50% !important;
 }
 
-.image {
-  opacity: 1 !;
-  display: block !important;
+
+#container-pic{
+  position: relative;
+  width: 50%;
+}
+.overlay{
+  opacity: 1;
+  display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   transition: .5s ease;
-  backface-visibility: hidden !important;
+ 
+
 }
 
-.container:hover .image {
+.info-text{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute !important;
+  top: 50%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+
+
+#container-pic:hover .overlay{
   opacity: 0.3;
 }
 
-.container:hover .middle {
+#container-pic:hover .info-text {
   opacity: 1;
 }
 
-.text {
-  background-color: #04AA6D;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
- 
+.Hire{
+  font-size: 25px !important;
 }
 
 @media screen and (max-width:600px){
@@ -401,7 +420,9 @@ padding: .5rem 1rem;
 .side-na1{
   display: none !important;
 }
-
+.info-text{
+  display: none;
+}
 }
 
 
