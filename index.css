@@ -242,11 +242,7 @@ textarea {
   padding: 10px;
 }
 
-.technology{
-  height: 200px;
-  margin: 10px;
-  padding: 15px;
-}
+
 
 ::-webkit-scrollbar {
   width: 20px;
@@ -420,10 +416,22 @@ textarea {
  align-items: center;
  gap: 20px;
 }
+.information{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: .6s ease-in-out;
+}
+
+.information.active{
+  opacity: 1;
+  transform: translateY(0);
+
+}
 
 .cntnt{
   border: 2px solid whitesmoke;
-  height: 350px;
+ height:100%;
 }
 
 .title{
@@ -439,22 +447,109 @@ textarea {
 
 }
 
-
+.tech{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  align-content: center;
+}
 .picture-tech{
   display: grid;
-  grid-template-columns: repeat(auto-fit , minmax(200px , 1fr)) ;
+  grid-template-columns: repeat(auto-fit , minmax(250px , 1fr)) ;
   align-items: center;
   gap: 20px;
+  justify-content: center;
 }
 
 .pict{
   padding: 10px;
   border: 4px solid #020035;
- 
+ transition: .3s ease;
   cursor: pointer;
 
 }
+.pict:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 
+/* Project-section */
+.pic-project{
+  border: 3px solid #020035;
+}
+
+.picture-project-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px , 1fr)) ;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+
+
+}
+
+.info-pic-project{
+  position: relative;
+  
+
+}
+.project-image{
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 3px solid #020035;
+  padding: 10px 6px 5px;
+
+  
+}
+
+.text-overlay-project{
+  position: absolute;
+  top: 10;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:#04d9ff;
+  
+  line-height: 200%;
+  flex-direction: column;
+  cursor: pointer !important;
+}
+
+.info-pic-project:hover .text-overlay-project{
+  opacity: 1;
+}
+
+.text-overlay{
+  color: #020035;
+  font-size: 18px;
+position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title-proj{
+  border-radius: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+.title-proj h1{
+  font-size: 4vw !important;
+  font-weight: 900;
+}
+
+.head{
+  border-radius: 20px;
+}
 @media screen and (max-width:600px){
   .mobile{
    display: flex;
@@ -537,9 +632,7 @@ padding: .5rem 1rem;
   align-items: center;
 
 }
-.wew{
 
-}
 
 .about-mine h3{
   font-size: 30px;

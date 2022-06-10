@@ -28,3 +28,17 @@ const loader = document.getElementById('preloader');
 window.addEventListener('load' , () =>{
     loader.style.display = 'none'
 })
+
+window.addEventListener('scroll' , () =>{
+    var reveal =  document.querySelectorAll('.information');
+    for(var i = 0 ; i < reveal.length; i++){
+      var windowHeight = window.innerHeight;  
+      var revealItem = reveal[i].getBoundingClientRect().top;
+      var revealpoint = 150
+      if(revealItem < windowHeight - revealpoint){
+        reveal[i].classList.add('active');
+      }else{
+        reveal[i].classList.remove('active')
+      }
+    }
+})
