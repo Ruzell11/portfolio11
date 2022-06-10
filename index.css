@@ -479,7 +479,7 @@ textarea {
 
 .picture-project-info{
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(250px , 1fr)) ;
+    grid-template-columns: repeat(auto-fit , minmax(400px , 1fr)) ;
     align-items: center;
     gap: 20px;
     justify-content: center;
@@ -495,7 +495,7 @@ textarea {
 }
 .project-image{
   display: block;
-  width: 100%;
+
   height: auto;
   border: 3px solid #020035;
   padding: 10px 6px 5px;
