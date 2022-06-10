@@ -357,7 +357,28 @@ textarea {
   font-size: 25px !important;
 }
 
+.mobile{
+  display: none;
+}
+
+#preloader{
+  background:black url('./preloader-iv.gif') no-repeat center ;
+  background-size: 20%;
+  height: 100vh ;
+  position: fixed; 
+  width: 100% ;
+  z-index: 100 ;
+}
+/* About-ME */
+
+
+ 
+
 @media screen and (max-width:600px){
+  .mobile{
+   display: flex;
+   flex-direction: column;
+  }
   .side-na1:last-child{
     display: flex !important;
   }
@@ -427,7 +448,7 @@ padding: .5rem 1rem;
   display: none !important;
 }
 .info-text{
-  display: none;
+  display: none !important;
 }
 }
 

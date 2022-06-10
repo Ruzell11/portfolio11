@@ -19,5 +19,12 @@ sideButton.addEventListener('click' , () => {
 header.forEach((event) => {
     event.addEventListener('click' , ()=>{
         sideNavLinks.classList.remove('active')
+        navbarLinks.classList.remove('active')
     })
+})
+
+const loader = document.getElementById('preloader');
+
+window.addEventListener('load' , () =>{
+    loader.style.display = 'none'
 })
