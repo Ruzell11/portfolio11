@@ -321,6 +321,7 @@ textarea {
   transition: .5s ease;
   position: relative;
   cursor: pointer;
+  z-index: -1;
 
  
 
@@ -370,9 +371,89 @@ textarea {
   z-index: 100 ;
 }
 /* About-ME */
+.ss{
+  z-index: -1 !important;
+}
+.about-mine{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20%;
 
 
+}
+.about-mine h3{
+  font-size: 60px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 900;
+}
+
+.about-mine p{
+  font-size: 1.5vw;
+
+  font-weight: 400;
+  color: #020035;
+  line-height: 200%;
+}
+.what{
+  background-color: #020035;
+  color: whitesmoke;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
  
+
+}
+.what-i-do{
+  border: 2px solid whitesmoke;
+ 
+ 
+}
+
+.information{
+  font-size: 20px;
+  display: grid;
+ grid-template-columns: repeat(auto-fit , minmax(250px , 1fr)) ;
+ align-items: center;
+ gap: 20px;
+}
+
+.cntnt{
+  border: 2px solid whitesmoke;
+  height: 350px;
+}
+
+.title{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+}
+
+.tech-title{
+  font-family: 'Courier New', Courier, monospace;
+  color: #04d9ff;
+  font-weight: 800;
+  border-radius: 20px;
+
+}
+
+
+.picture-tech{
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(200px , 1fr)) ;
+  align-items: center;
+  gap: 20px;
+}
+
+.pict{
+  padding: 10px;
+  border: 4px solid #020035;
+ 
+  cursor: pointer;
+
+}
 
 @media screen and (max-width:600px){
   .mobile{
@@ -449,6 +530,27 @@ padding: .5rem 1rem;
 }
 .info-text{
   display: none !important;
+}
+.about-mine{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.wew{
+
+}
+
+.about-mine h3{
+  font-size: 30px;
+ 
+}
+.about-mine p{
+  font-size: 18px;
+  width: 100%;
+}
+.pic{
+  display: none;
 }
 }
 
