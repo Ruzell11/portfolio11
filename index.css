@@ -78,7 +78,7 @@ nav  li{
   display: flex !important;
   justify-content: flex-end;
   position: absolute !important;
-  top: 55px;
+  top: 65px;
   right: 0px;
   transition: .3s ease;
   
@@ -466,6 +466,7 @@ textarea {
   border: 4px solid #020035;
  transition: .3s ease;
   cursor: pointer;
+  border-radius: 50%;
 
 }
 .pict:hover{
@@ -479,7 +480,7 @@ textarea {
 
 .picture-project-info{
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(400px , 1fr)) ;
+    grid-template-columns: repeat(auto-fit , minmax(450px , 1fr)) ;
     align-items: center;
     gap: 20px;
     justify-content: center;
@@ -495,7 +496,7 @@ textarea {
 }
 .project-image{
   display: block;
-
+width: 100%;
   height: auto;
   border: 3px solid #020035;
   padding: 10px 6px 5px;
@@ -514,6 +515,7 @@ textarea {
   opacity: 0;
   transition: .5s ease;
   background-color:#04d9ff;
+  
   
   line-height: 200%;
   flex-direction: column;
